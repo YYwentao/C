@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<string.h>
+#include<assert.h>
 //第一题 
 //题目内容:
 //实现一个函数，可以左旋字符串中的k个字符。
@@ -33,12 +34,34 @@
 // ab cdef
 // ba fedc
 // cdefab 
-int main()
-{
-	int a = 0;//输入要左旋的字符数 
-	char arr[] = "abcdef";
-	scanf("%d",&a);
-	left_move(arr,a);
-	printf("%s\n",arr); 
-	return 0;
-} 
+//void reverse(char* left,char* right)
+//{
+//	while(left<right)
+//	{
+//		char tmp = *left;
+//		*left = *right;
+//		*right = tmp;
+//		left++;
+//		right--;
+//	}
+//}
+//void left_move(char* arr,int k)
+//{
+//	assert(arr);
+//	int len = strlen(arr);
+//	assert(k<=len);
+//	reverse(arr,arr+k-1);
+//	reverse(arr+k,arr+len-1);
+//	reverse(arr,arr+len-1);
+//}
+//int main()
+//{
+//	int a = 0;//输入要左旋的字符数 
+//	char arr[] = "abcdef";
+//	scanf("%d",&a);
+//	left_move(arr,a);
+//	printf("%s\n",arr); 
+//	return 0;
+//}
+
+ 
