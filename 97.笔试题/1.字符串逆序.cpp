@@ -1,5 +1,5 @@
 //#include<stdio.h> 
-#include<string.h>
+//#include<string.h>
 void reverse(char* left,char* right)
 {
 	while(left<right)
